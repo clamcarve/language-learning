@@ -31,3 +31,20 @@ int main()
     return 0;
 }
 */
+//利用递归倒叙输出i-0
+#include <stdio.h>
+
+int count(int i) {
+    printf("%d\n", i);
+    if (i < 1) {
+        return 0;
+    }
+    return count(i - 1);
+}
+
+int main() {
+    int i = 0;
+    scanf("%d", &i);
+    count(i);
+    return 0;
+}
